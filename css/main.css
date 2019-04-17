@@ -97,42 +97,94 @@ textarea {
 
 
 html {
-  background-color: #fff;
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 16px;
   height: 100%;
-  background: #F4F0EE;
+  background: #fff4e6;
+ 
+  }
+
+header {
+     background-image: url("../img/praia-da-rocha.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 2px;
+     border: 5px solid #fff;
+     box-shadow: 5px 5px 5px #888;
+     font-size: 1.25rem;
+     color: #fff;
+     width: 100%;
+     height: 700px;
+
 }
 
-.wrapper {
+main {
+    font-size: 1.325rem;
+    color: #333333;
+    width: 100%;
+
+}
+
+footer {
+    font-size: 1.2rem;
+    color: #333333;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+header, 
+main,
+footer 
+    {
+    /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    justify-content: center;
+    align-items: center;
+}
+.flex-container {
   /*added display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
  
 }
 
-.div-1, .div-2, .div-3 {
+
+.beaches, .food, .people {
   /*given the divs a width of 30%, added display:flex, set justify-content and align-items to center*/
   color: #fff;
-  border-radius: 25px;
-  border: 5px solid #E93095;
+  border-radius: 2px;
+  border: 5px solid #fff;
+  box-shadow: 5px 5px 5px #888;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.em;
-  font-size: 1.em;
-  background-color: #F287B7;
+  line-height: 1.8rem;
+  font-size: 1.123rem;
+  background-color: #11B1D0;
   padding: 1%;
   height: 300px;
   width: 30%;
 }
 
+span {
+    font-size: 1.3rem;
+}
 
 
 
